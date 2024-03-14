@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Sign Up</title>
+</head>
+<body>
+
+<section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+        <h4>Sign Up for Newsletters</h4>
+        <p>Get Email updates about our latest shop and <span>special offers.</span></p>
+    </div>
+    <form id="signupForm" class="form" onsubmit="submitForm(event)">
+        <input type="email" id="emailInput" placeholder="Your Email Address" required>
+        <button type="submit" class="normal">Sign Up</button>
+    </form>
+</section>
+
+<script>
+    function submitForm(event) {
+        event.preventDefault(); // Prevents the default form submission behavior
+
+        // You can add additional logic here to handle the form data, e.g., sending it to a server
+
+        // Redirect to the success page
+        window.location.href = 'success.html';
+    }
+</script>
+
+</body>
+</html>
